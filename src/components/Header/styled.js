@@ -1,14 +1,17 @@
 import styled, { css } from 'styled-components';
-import { primaryColor, primaryDarkColor } from '../../configs/colors';
 
 const nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
 
+  ${(props) => !props.$active && css`
+    padding-top: 0px;
+  `}
+
   ul {
-    color: #fff;
-    background-color: transparent;
+    color: ${(props) => props.theme.colors.text};
+    background-color: ${(props) => props.theme.colors.primary};
     padding: 20px;
     display: flex;
     align-items: center;
@@ -19,13 +22,13 @@ const nav = styled.nav`
 
  ${(props) => props.$active && css`
   ul {
-    color: ${primaryDarkColor};
-    background-color: ${primaryColor};
+    color: ${props.theme.colors.primary};
+    background-color: ${props.theme.colors.secondary};
   }
  `}
 
   a, p {
-    color: #fff;
+    color: ${(props) => props.theme.colors.text};
     margin: 0 10px 0;
     font-weight: bold;
   }

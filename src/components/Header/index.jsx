@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import PropTypes from 'prop-types';
 import { FaWhatsapp, FaTelegramPlane, FaInstagram } from 'react-icons/fa';
+import Switch from 'react-switch';
+import { ThemeContext } from 'styled-components';
+import { shade } from 'polished';
 
 import Nav from './styled';
 
-export default function NavBar() {
+export default function NavBar({ toggleTheme }) {
   const [navBar, setNavBar] = useState(false);
+  const { title } = useContext(ThemeContext);
 
   const changeNavbar = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY > 10) {
       setNavBar('$active');
     } else {
       setNavBar('');
@@ -19,6 +24,17 @@ export default function NavBar() {
   return (
     <Nav $active={navBar}>
       <ul>
+        <Switch
+          onChange={toggleTheme}
+          checked={title === 'dark'}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          height={20}
+          width={50}
+          handleDiameter={20}
+          offColor={shade(0.15, '#C3073F')}
+          onColor={title === 'dark' ? '#38383f' : '#850028'}
+        />
         <li>
           Home
         </li>
@@ -38,3 +54,7 @@ export default function NavBar() {
     </Nav>
   );
 }
+
+NavBar.propTypes = {
+  toggleTheme: PropTypes.func.isRequired,
+};

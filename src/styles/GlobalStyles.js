@@ -1,12 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import {
-  primaryColor,
-  primaryDarkColor,
-  errorColor,
-  warnColor,
-  successColor,
-} from '../configs/colors';
 import 'react-toastify/dist/ReactToastify.css';
+import { warnColor, errorColor, successColor } from '../configs/colors';
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -18,8 +12,8 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         font-family: sans-serif;
-        background-color: ${primaryDarkColor};
-        color: ${primaryDarkColor};
+        background-color: ${(props) => props.theme.colors.background};
+        color: ${(props) => props.theme.colors.text};
     }
 
     html, body, #root {
@@ -28,9 +22,9 @@ export const GlobalStyles = createGlobalStyle`
 
     button {
         cursor: pointer;
-        background-color: ${primaryColor};
+        background-color: ${(props) => props.theme.colors.primary};
         border: none;
-        color: #FFF;
+        color: ${(props) => props.theme.colors.text};
         padding: 10px 20px;
         border-radius: 4px;
         font-weight: 700;
@@ -38,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
 
     a {
         text-decoration: none;
-        background-color: ${primaryColor};
+        background-color: ${(props) => props.theme.colors.primary};
     }
 
     ul {
@@ -62,10 +56,4 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const Container = styled.section`
-    max-width: 360px;
-    background-color: #FFF;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 `;

@@ -1,11 +1,10 @@
-import { Div, Trapezio } from './styled';
+import { Div } from './styled';
+import FirstSection from '../FirstSection';
 
 export default function Body() {
   return (
     <>
-      <Trapezio>
-        <div />
-      </Trapezio>
+      <FirstSection />
       <Div>
         <div>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
         <div>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</div>
