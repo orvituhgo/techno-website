@@ -6,8 +6,8 @@ export default function Body() {
     <>
       <FirstSection />
       <Div>
-        <div>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-        <div>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</div>
+        <div className="galeria">galeriaaaaaaaaaaaaaaaaa</div>
+        <div className="contato">contato</div>
       </Div>
     </>
   );

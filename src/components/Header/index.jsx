@@ -4,6 +4,7 @@ import { FaWhatsapp, FaTelegramPlane, FaInstagram } from 'react-icons/fa';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';
+import { Link as ScrollLink } from 'react-scroll';
 
 import Nav from './styled';
 
@@ -19,6 +20,11 @@ export default function NavBar({ toggleTheme }) {
     }
   };
 
+  // {
+  //   behavior: 'smooth',
+  //   block: 'nearest',
+  //   inline: 'center'
+  // }
   document.addEventListener('scroll', changeNavbar);
 
   return (
@@ -36,10 +42,43 @@ export default function NavBar({ toggleTheme }) {
           onColor={title === 'dark' ? '#38383f' : '#850028'}
         />
         <li>
-          Home
+          <ScrollLink
+            spy
+            smooth
+            hashSpy
+            offset={-74}
+            duration={500}
+            to="home"
+          >
+            Home
+
+          </ScrollLink>
         </li>
         <li>
-          Galeria
+          <ScrollLink
+            spy
+            smooth
+            hashSpy
+            offset={-74}
+            duration={500}
+            to="galeria"
+          >
+            Galeria
+
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink
+            spy
+            smooth
+            hashSpy
+            offset={-74}
+            duration={500}
+            to="contato"
+          >
+            Contato
+
+          </ScrollLink>
         </li>
         <li>
           <FaWhatsapp size={30} />

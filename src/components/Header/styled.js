@@ -20,18 +20,24 @@ const nav = styled.nav`
     gap: 20px;
   };
 
+  a, li {
+    color: ${(props) => props.theme.colors.secondary};
+    background-color: transparent
+  }
+
+
+
  ${(props) => props.$active && css`
   ul {
     color: ${props.theme.colors.primary};
     background-color: ${props.theme.colors.secondary};
   }
+  a, li {
+    color: ${props.theme.colors.primary};
+    background-color: transparent
+  }
  `}
 
-  a, p {
-    color: ${(props) => props.theme.colors.text};
-    margin: 0 10px 0;
-    font-weight: bold;
-  }
   `;
 
 export default nav;
