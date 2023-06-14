@@ -1,7 +1,7 @@
 export const primaryColor = '#1a1a1d';
-export const secondaryColor = '#C3073F';
+export const secondaryColor = '#3C37F1';
 export const bgColor = '#eee';
-export const text = '#C3073F';
+export const text = '#fff';
 
 export default {
   title: 'light',

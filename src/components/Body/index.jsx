@@ -1,14 +1,11 @@
-import { Div } from './styled';
 import FirstSection from '../FirstSection';
+import Cards from '../SecondSection';
 
 export default function Body() {
   return (
     <>
       <FirstSection />
-      <Div>
-        <div className="galeria">galeriaaaaaaaaaaaaaaaaa</div>
-        <div className="contato">contato</div>
-      </Div>
+      <Cards />
     </>
   );
 }

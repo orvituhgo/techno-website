@@ -1,7 +1,7 @@
-export const primaryDarkColor = '#C3073F';
-export const secondaryDarkColor = '#1a1a1d';
-export const bgDarkColor = '#1a1a1d';
-export const textDark = '#eee';
+export const primaryDarkColor = '#007F7F';
+export const secondaryDarkColor = '#171C48';
+export const bgDarkColor = '#171C48';
+export const textDark = '#fff';
 
 export default {
   title: 'dark',

@@ -1,8 +1,22 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import 'react-toastify/dist/ReactToastify.css';
 import { warnColor, errorColor, successColor } from '../configs/colors';
+// import NowBold from '../fonts/Now-Bold/Now Bold.woff';
+// import NowBold2 from '../fonts/Now-Bold/Now Bold.woff2';
+// import NowBoldTTF from '../fonts/Now-Bold/Now Bold.ttf';
+import NowRegular from '../fonts/Now-Regular/Now-Regular.woff';
+import NowRegular2 from '../fonts/Now-Regular/Now-Regular.woff2';
+import NowRegularTTF from '../fonts/Now-Regular/Now-Regular.ttf';
 
 export const GlobalStyles = createGlobalStyle`
+
+  @font-face {
+    font-family: 'Now';
+    src: url(${NowRegular2}) format('woff2'),
+         url(${NowRegular}) format('woff'),
+         url(${NowRegularTTF}) format('truetype');
+
+  }
     * {
         margin: 0;
         padding: 0;
@@ -11,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: sans-serif;
+        font-family: 'Now';
         background-color: ${(props) => props.theme.colors.background};
         color: ${(props) => props.theme.colors.text};
     }
@@ -31,8 +45,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     a {
-        text-decoration: none;
-        background-color: ${(props) => props.theme.colors.primary};
+        text-decoration: none;;
     }
 
     ul {

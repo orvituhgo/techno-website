@@ -10,10 +10,10 @@ import Nav from './styled';
 
 export default function NavBar({ toggleTheme }) {
   const [navBar, setNavBar] = useState(false);
-  const { title } = useContext(ThemeContext);
+  const { colors, title } = useContext(ThemeContext);
 
   const changeNavbar = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 0) {
       setNavBar('$active');
     } else {
       setNavBar('');
@@ -30,17 +30,9 @@ export default function NavBar({ toggleTheme }) {
   return (
     <Nav $active={navBar}>
       <ul>
-        <Switch
-          onChange={toggleTheme}
-          checked={title === 'dark'}
-          checkedIcon={false}
-          uncheckedIcon={false}
-          height={20}
-          width={50}
-          handleDiameter={20}
-          offColor={shade(0.15, '#C3073F')}
-          onColor={title === 'dark' ? '#38383f' : '#850028'}
-        />
+        <li className="logo">
+          <img src="src/images/letreirol.svg" alt="" />
+        </li>
         <li>
           <ScrollLink
             spy
@@ -61,9 +53,9 @@ export default function NavBar({ toggleTheme }) {
             hashSpy
             offset={-74}
             duration={500}
-            to="galeria"
+            to="solucoes"
           >
-            Galeria
+            Solucoes
 
           </ScrollLink>
         </li>
@@ -88,6 +80,21 @@ export default function NavBar({ toggleTheme }) {
         </li>
         <li>
           <FaInstagram size={30} />
+        </li>
+        <li>
+          <Switch
+            onChange={toggleTheme}
+            checked={title === 'dark'}
+            checkedIcon={false}
+            uncheckedIcon={false}
+            height={20}
+            width={50}
+            handleDiameter={20}
+          // offColor={shade(0.15, '#C3073F')}
+            offColor={shade(0.15, colors.secondary)}
+          // onColor={title === 'dark' ? '#38383f' : '#850028'}
+            onColor={colors.secondary}
+          />
         </li>
       </ul>
     </Nav>
