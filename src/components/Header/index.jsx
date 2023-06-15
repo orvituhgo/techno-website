@@ -14,17 +14,11 @@ export default function NavBar({ toggleTheme }) {
 
   const changeNavbar = () => {
     if (window.scrollY > 0) {
-      setNavBar('$active');
+      if (!navBar) { setNavBar('$active'); }
     } else {
       setNavBar('');
     }
   };
-
-  // {
-  //   behavior: 'smooth',
-  //   block: 'nearest',
-  //   inline: 'center'
-  // }
   document.addEventListener('scroll', changeNavbar);
 
   return (

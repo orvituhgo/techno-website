@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const nav = styled.nav`
-  transition: all 200ms linear 200ms;
+  /* transition: all 200ms linear 200ms; */
   margin-bottom: -117px;
   position: sticky;
   top: 0;

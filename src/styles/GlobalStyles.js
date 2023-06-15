@@ -10,13 +10,13 @@ import NowRegularTTF from '../fonts/Now-Regular/Now-Regular.ttf';
 
 export const GlobalStyles = createGlobalStyle`
 
-  @font-face {
-    font-family: 'Now';
-    src: url(${NowRegular2}) format('woff2'),
-         url(${NowRegular}) format('woff'),
-         url(${NowRegularTTF}) format('truetype');
+    @font-face {
+      font-family: 'Now';
+      src: url(${NowRegular2}) format('woff2'),
+          url(${NowRegular}) format('woff'),
+          url(${NowRegularTTF}) format('truetype');
 
-  }
+    }
     * {
         margin: 0;
         padding: 0;
@@ -64,6 +64,15 @@ export const GlobalStyles = createGlobalStyle`
     body .Toastify .Toastify__toast-container .Toastify__toast--warn {
         background-color: ${warnColor};
         color: #fff;
+    }
+
+    .init-hidden {
+      opacity: 0;
+    }
+
+    .init-hidden-off {
+      transition: all 1s linear;
+      opacity: 1;
     }
 
 `;
