@@ -6,7 +6,7 @@ import {
 
 export default function Portfolio() {
   return (
-    <Container className="init-hidden">
+    <Container className="init-hidden portfolio">
       <Title><h1>PORTFOLIO</h1></Title>
       <Display>
         <Item />

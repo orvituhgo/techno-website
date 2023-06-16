@@ -37,7 +37,6 @@ export default function NavBar({ toggleTheme }) {
             to="home"
           >
             Home
-
           </ScrollLink>
         </li>
         <li>
@@ -50,7 +49,18 @@ export default function NavBar({ toggleTheme }) {
             to="solucoes"
           >
             Solucoes
-
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink
+            spy
+            smooth
+            hashSpy
+            offset={-74}
+            duration={500}
+            to="portfolio"
+          >
+            Portfolio
           </ScrollLink>
         </li>
         <li>
@@ -63,7 +73,6 @@ export default function NavBar({ toggleTheme }) {
             to="contato"
           >
             Contato
-
           </ScrollLink>
         </li>
         <li>

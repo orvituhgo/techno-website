@@ -23,6 +23,10 @@ const Container = styled.section`
   align-items: center;
   gap: 40px;
   padding-bottom: 50px;
+
+  div::-webkit-scrollbar{
+
+  }
 `;
 
 const Display = styled.div`
@@ -39,7 +43,7 @@ const Display = styled.div`
 
 const Item = styled.div`
   margin: 10px;
-  background-color: grey;
+  background-image: url('/src/images/placeholder.svg');
   height: 200px;
   width: 400px;
 `;

@@ -10,11 +10,11 @@ import Media from '../atoms/media';
 
 export default function Cards() {
   return (
-    <Container className="init-hidden">
+    <Container className="init-hidden solucoes">
       <Title>
         <h1>SOLUCOES</h1>
       </Title>
-      <Card className="solucoes">
+      <Card>
         <div>
           <div className="icon">
             <FaCube size={40} />

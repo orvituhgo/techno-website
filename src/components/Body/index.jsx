@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import FirstSection from '../FirstSection';
 import Cards from '../SecondSection';
 import Portfolio from '../ThirdSection';
+import Contact from '../FourthSection';
+import Footer from '../Footer';
 
 export default function Body() {
   const observer = new IntersectionObserver((entries) => {
@@ -23,6 +25,8 @@ export default function Body() {
       <FirstSection />
       <Cards />
       <Portfolio />
+      <Footer />
+      <Contact />
     </>
   );
 }
