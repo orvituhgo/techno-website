@@ -35,13 +35,33 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     button {
-        cursor: pointer;
-        background-color: ${(props) => props.theme.colors.primary};
-        border: none;
-        color: ${(props) => props.theme.colors.text};
-        padding: 10px 20px;
-        border-radius: 4px;
-        font-weight: 700;
+      cursor: pointer;
+      height: fit-content;
+      width: fit-content;
+      padding: 20px;
+      font-weight: bold;
+      border-radius: 30px;
+      color: ${(props) => props.theme.colors.primary};
+      border: 2px solid ${(props) => props.theme.colors.secondary};
+      font-family: 'Now';
+      font-size: 1rem;
+      transition: background-color color 200ms linear;
+    }
+
+    button:hover{
+      background-color: ${(props) => props.theme.colors.secondary};
+      color: ${(props) => props.theme.colors.background};
+      box-shadow: inset 0px 0px 8px rgba(0,0,0,0.1);
+    }
+
+    input {
+      color: ${(props) => props.theme.colors.secondary}
+    }
+
+    input::placeholder {
+      font-family: 'Now';
+      letter-spacing: 1px;
+      color: ${(props) => props.theme.colors.secondary};
     }
 
     a {
@@ -74,7 +94,6 @@ export const GlobalStyles = createGlobalStyle`
       transition: all 1s linear;
       opacity: 1;
     }
-
 `;
 
 export const Container = styled.section`

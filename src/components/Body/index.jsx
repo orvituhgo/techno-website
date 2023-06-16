@@ -18,15 +18,15 @@ export default function Body() {
 
   useEffect(() => (() => {
     Array.from(document.querySelectorAll('.init-hidden')).forEach((element) => observer.observe(element));
-  }), []);
+  }));
 
   return (
     <>
       <FirstSection />
       <Cards />
       <Portfolio />
-      <Footer />
       <Contact />
+      <Footer />
     </>
   );
 }
