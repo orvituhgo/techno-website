@@ -68,6 +68,7 @@ const Input = styled.input`
   padding: 15px;
   line-height: 1.5rem;
   font-size: 1rem;
+  letter-spacing: 2px;
 `;
 
 export {
