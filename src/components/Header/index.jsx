@@ -25,7 +25,7 @@ export default function NavBar({ toggleTheme }) {
     <Nav $active={navBar}>
       <ul>
         <li className="logo">
-          <img src="src/images/letreirol.svg" alt="" />
+          <img src="src/assets/letreirol.svg" alt="" />
         </li>
         <li>
           <ScrollLink

@@ -43,7 +43,7 @@ const Display = styled.div`
 
 const Item = styled.div`
   margin: 10px;
-  background-image: url('/src/images/placeholder.svg');
+  background-image: url('/src/assets/placeholder.svg');
   height: 200px;
   width: 400px;
 `;

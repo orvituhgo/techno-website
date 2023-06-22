@@ -47,7 +47,7 @@ export default function Contact() {
     <Container className="contato">
       <div className="content">
         <figure>
-          <img src="src/images/Email campaign-bro.svg" alt="" />
+          <img src="src/assets/Email campaign-bro.svg" alt="" />
         </figure>
         <Form onSubmit={sendEmail}>
           <Title>
