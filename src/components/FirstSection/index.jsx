@@ -10,7 +10,7 @@ export default function FirstSection() {
         </p>
       </div>
       <div>
-        <img src="src/assets/amico-top.svg" alt="" />
+        <img src="src/assets/amico-top.svg" alt="fundo topo da pagina" />
       </div>
     </Banner>
   );
