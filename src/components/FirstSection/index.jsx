@@ -10,7 +10,7 @@ export default function FirstSection() {
         </p>
       </div>
       <div>
-        <img src="src/images/amico-top.svg" alt="" />
+        <img src="public/images/banner-bg.svg" alt="" />
       </div>
     </Banner>
   );
