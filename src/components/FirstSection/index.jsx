@@ -6,11 +6,11 @@ export default function FirstSection() {
       <div className="home">
         <h1>Tenha um software eficiente e escalável.</h1>
         <p>
-          SemTESTESTETESETESNós queremos te entregar resultados consistentes aumentando a produtividade do seu negócio através de uma consultoria de software que supere suas expectativas.
+          Sdsadsadsdasdasico! Nós queremos te entregar resultados consistentes aumentando a produtividade do seu negócio através de uma consultoria de software que supere suas expectativas.
         </p>
       </div>
       <div>
-        <img src="public/images/banner-bg.svg" alt="" />
+        <img src="src/images/amico-top.svg" alt="" />
       </div>
     </Banner>
   );
