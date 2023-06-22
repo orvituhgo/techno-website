@@ -107,7 +107,7 @@ Error generating stack: `+i.message+`
     height: 400px;
     width: 400px;
   }
-`;function zy(){return E.jsxs(Ry,{children:[E.jsxs("div",{className:"home",children:[E.jsx("h1",{children:"Tenha um software eficiente e escalável."}),E.jsx("p",{children:"Sdsadsadsdasdasico! Nós queremos te entregar resultados consistentes aumentando a produtividade do seu negócio através de uma consultoria de software que supere suas expectativas."})]}),E.jsx("div",{children:E.jsx("img",{src:"src/assets/amico-top.svg",alt:""})})]})}const My=Oe.div`
+`;function zy(){return E.jsxs(Ry,{children:[E.jsxs("div",{className:"home",children:[E.jsx("h1",{children:"Tenha um software eficiente e escalável."}),E.jsx("p",{children:"Sdsadsadsdasdasico! Nós queremos te entregar resultados consistentes aumentando a produtividade do seu negócio através de uma consultoria de software que supere suas expectativas."})]}),E.jsx("div",{children:E.jsx("img",{src:"src/assets/amico-top.svg",alt:"fundo topo da pagina"})})]})}const My=Oe.div`
   width: 100%;
   height: 100%;
   display: flex;
