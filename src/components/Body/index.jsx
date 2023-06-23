@@ -16,9 +16,7 @@ export default function Body() {
     threshold: 0.7,
   });
 
-  useEffect(() => (() => {
-    Array.from(document.querySelectorAll('.init-hidden')).forEach((element) => observer.observe(element));
-  }));
+  useEffect(() => { Array.from(document.querySelectorAll('.init-hidden')).forEach((element) => observer.observe(element)); });
 
   return (
     <>
