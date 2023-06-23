@@ -8,6 +8,8 @@ import Footer from '../Footer';
 export default function Body() {
   const observer = new IntersectionObserver((entries) => {
     Array.from(entries).forEach((entry) => {
+      console.log(entry.intersectionRatio);
+      console.log(entry);
       if (entry.intersectionRatio >= 0.7) {
         entry.target.classList.add('init-hidden-off');
       }
@@ -16,7 +18,9 @@ export default function Body() {
     threshold: 0.7,
   });
 
-  useEffect(() => { Array.from(document.querySelectorAll('.init-hidden')).forEach((element) => observer.observe(element)); });
+  useEffect(() => {
+    Array.from(document.querySelectorAll('.init-hidden')).forEach((element) => observer.observe(element));
+  });
 
   return (
     <>
