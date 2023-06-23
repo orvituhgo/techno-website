@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import banner from '../../assets/banner-bg.svg';
 
 const Trapezio = styled.div`
-  background-image: url('src/assets/banner-bg.svg');
+  background-image: url(${banner});
   background-repeat: repeat-x;
   width: 100%;
   height: 80vh;

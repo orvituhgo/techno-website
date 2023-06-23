@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import {
   Container, Title, Form, Input,
 } from './styled';
+import emailBro from '../../assets/Email campaign-bro.svg';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -47,7 +48,7 @@ export default function Contact() {
     <Container className="contato">
       <div className="content">
         <figure>
-          <img src="src/assets/Email campaign-bro.svg" alt="" />
+          <img src={emailBro} alt="" />
         </figure>
         <Form onSubmit={sendEmail}>
           <Title>

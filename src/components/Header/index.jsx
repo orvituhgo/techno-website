@@ -7,6 +7,7 @@ import { shade } from 'polished';
 import { Link as ScrollLink } from 'react-scroll';
 
 import Nav from './styled';
+import letreiroL from '../../assets/letreirol.svg';
 
 export default function NavBar({ toggleTheme }) {
   const [navBar, setNavBar] = useState(false);
@@ -25,7 +26,7 @@ export default function NavBar({ toggleTheme }) {
     <Nav $active={navBar}>
       <ul>
         <li className="logo">
-          <img src="src/assets/letreirol.svg" alt="" />
+          <img src={letreiroL} alt="" />
         </li>
         <li>
           <ScrollLink

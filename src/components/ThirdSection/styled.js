@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import placeholder from '../../assets/placeholder.svg';
 
 const Title = styled.div`
   display: flex;
@@ -43,7 +44,7 @@ const Display = styled.div`
 
 const Item = styled.div`
   margin: 10px;
-  background-image: url('/src/assets/placeholder.svg');
+  background-image: url(${placeholder});
   height: 200px;
   width: 400px;
 `;
