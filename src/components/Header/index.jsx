@@ -15,7 +15,9 @@ export default function NavBar({ toggleTheme }) {
 
   const changeNavbar = () => {
     if (window.scrollY > 0) {
-      if (!navBar) { setNavBar('$active'); }
+      if (!navBar) {
+        setNavBar('$active');
+      }
     } else {
       setNavBar('');
     }
@@ -28,15 +30,11 @@ export default function NavBar({ toggleTheme }) {
         <li className="logo">
           <img src={letreiroL} alt="" />
         </li>
+        <li className="logo">
+          <a href="fhir-frontend:///two">Abrir App</a>
+        </li>
         <li>
-          <ScrollLink
-            spy
-            smooth
-            hashSpy
-            offset={-74}
-            duration={500}
-            to="home"
-          >
+          <ScrollLink spy smooth hashSpy offset={-74} duration={500} to="home">
             Home
           </ScrollLink>
         </li>
@@ -94,9 +92,9 @@ export default function NavBar({ toggleTheme }) {
             height={20}
             width={50}
             handleDiameter={20}
-          // offColor={shade(0.15, '#C3073F')}
+            // offColor={shade(0.15, '#C3073F')}
             offColor={shade(0.15, colors.secondary)}
-          // onColor={title === 'dark' ? '#38383f' : '#850028'}
+            // onColor={title === 'dark' ? '#38383f' : '#850028'}
             onColor={colors.secondary}
           />
         </li>
